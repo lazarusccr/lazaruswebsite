@@ -11,6 +11,9 @@
 	<meta name="author" content="{ $page_author }" />
 	<meta name="copyright" content="Lazarus" />
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="{ $theme_path }bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="{ $theme_path }style.css" />
 {if $ishome eq "True"}
 	<script type="text/javascript" src="{ $theme_path }script_home.js"></script>
@@ -50,7 +53,7 @@
   <div class="slidewrap">
 	<div class="left_shot">
 		<a href="https://wiki.lazarus.freepascal.org/Screenshots">
-			<img src="{ $theme_path }images/homeshot_1.gif" alt="Lazarus Screenshot" title="Lazarus IDE" />
+			<img src="{ $theme_path }images/homeshot_1.gif" class="img-fluid" alt="Lazarus Screenshot" title="Lazarus IDE" />
 		</a>
 	</div>
 	<div class="slider_r">
@@ -93,15 +96,15 @@
   <div class="contentwrap">
 
 	<div class="contentsection">
-	<div class="table_wrap"><div style="width:100%;">
-		<div class="column_wrap33"><div class="columnn_inner">
+	<div class="row">
+		<div class="col-md-4"><div class="columnn_inner">
 			<h2>What is Lazarus?</h2>
 			<p>Lazarus is a Delphi compatible cross-platform IDE for Rapid Application Development. It has variety of components ready for use and a graphical form designer to easily create complex graphical user interfaces.</p>
 			<p class="content_more small"><span><a href="{ $home_php_name }?page=about" class="btlink">Learn more...</a></span>
 			<span><a href="http://en.wikipedia.org/wiki/Lazarus_%28IDE%29">Wikipedia</a></span></p>
 		</div></div>
 	
-		<div class="column_wrap33"><div class="columnn_inner">
+		<div class="col-md-4"><div class="columnn_inner">
 			<h2>What can it do?</h2>
 			<p>You can create your own open source or commercial applications. With Lazarus you can create file browsers, image viewers, database applications, graphics editing software, games, 3D software, medical analysis software or any other type of software.</p>
 			<p class="content_more small">
@@ -110,7 +113,7 @@
 			</p>
 		</div></div>
 	
-		<div class="column_wrap33"><div class="columnn_inner">
+		<div class="col-md-4"><div class="columnn_inner">
 			<h2>Where to learn?</h2>
 			<p>Lazarus has a huge community of people supporting each other. It include scientists and students, pupils and teachers, professionals and hobbyists. Our wiki provides tutorials, documentations and ideas. Our forums and mailing-list offer a space to ask questions and talk to users and the developers.
 			</p>
@@ -120,14 +123,13 @@
 			</p>
 		</div></div>
 		<div class="clear"></div>
-	</div>
 	</div></div>
 	
 
 	
 
-	<div class="table_wrap"><div style="width:100%;">
-	<div class="column_wrap66"><div class="columnn_inner">
+	<div class="row">
+	<div class="col-md-8"><div class="columnn_inner">
 		<div class="contentsection">
 			<div class="contentbox">
 				<h2 class="contentbox_h2">Recent Announcements</h2>
@@ -151,8 +153,8 @@
 
 		<div class="contentsection">
 			<div class="contentbox contentbox_grey randproj">
-				<div class="table_wrap"><div style="width:100%;">
-					<div class="column_wrap33"><div class="columnn_inner">
+				<div class="row">
+					<div class="col-md-4"><div class="columnn_inner">
 						<div class="randproj_note">
 							<h2>Random Project</h2>
 							<p  class="content_more">from our 
@@ -161,7 +163,7 @@
 							This is an example of what can be done with Lazarus</p>
 						</div>
 					</div></div>
-					<div class="column_wrap66"><div class="columnn_inner">
+					<div class="col-md-8"><div class="columnn_inner">
 						<p class="randproj_text">
 							<img src="randproj/{ $rand_proj_img }" alt="{ $rand_proj_title }" title="{ $rand_proj_title }" height="70" />
 							{ $rand_proj_desc }
@@ -172,7 +174,7 @@
 						</p>
 					</div></div>
 					<div class="clear"></div>
-				</div><div class="clear"></div>
+				<div class="clear"></div>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -181,7 +183,7 @@
 
 		<div class="contentsection">
 			<div class="contentbox contentbox_grey tipofday">
-			<div class="table_wrap"><div style="width:100%;"><div class="columnn_inner">
+			<div class="row"><div><div class="columnn_inner">
 				<p>
 						<img  style="float: right; max-width: 66%; padding-left: 20px" src="{ $tip_of_the_day_img }"</img>
 						<h2><strong>Tip of the day: </strong></h2>
@@ -196,7 +198,7 @@
 
 	</div></div>
 
-	<div class="column_wrap33"><div class="columnn_inner">
+	<div class="col-md-4"><div class="columnn_inner">
 
 		<div class="contentsection">
 			<div class="contentbox" >
@@ -244,7 +246,7 @@
 
 	</div></div>
 	<div class="clear"></div>
-	</div></div>
+	</div>
 
 
 	
@@ -253,9 +255,9 @@
 	
 	
 	
-	<div class="spacious_block"><div style="width:100%;">
+	<div class="row">
 
-		<div class="column_wrap25"><div class="columnn_inner_w"><div class="hblock2">
+		<div class="col-md-3"><div class="columnn_inner_w"><div class="hblock2">
 			<h3>Lazarus / <span>Free Pascal</span></h3>
 			<ul>
 				<li><a href="{ $home_php_name }?page=features">Features</a></li>
@@ -267,7 +269,7 @@
 			</ul>
 		</div></div></div>
 
-		<div class="column_wrap25"><div class="columnn_inner_w"><div class="hblock2">
+		<div class="col-md-3"><div class="columnn_inner_w"><div class="hblock2">
 			<h3>Platforms</h3>
 			<ul>
 				<li><a href="https://wiki.lazarus.freepascal.org/Portal:Android">Lazarus for Android Development</a></li>
@@ -282,7 +284,7 @@
 			</ul>
 		</div></div></div>
 		
-		<div class="column_wrap25"><div class="columnn_inner_w"><div class="hblock2">
+		<div class="col-md-3"><div class="columnn_inner_w"><div class="hblock2">
 			<h3>Applications</h3>
 			<ul>
 				<li><a href="http://wiki.freepascal.org/Projects_using_Lazarus">Projects Using Lazarus</a></li>
@@ -292,7 +294,7 @@
 			</ul>
 		</div></div></div>
 
-		<div class="column_wrap25"><div class="columnn_inner_w"><div class="hblock2">
+		<div class="col-md-3"><div class="columnn_inner_w"><div class="hblock2">
 			<h3>Download</h3>
 			<ul>
 				<li><a href="http://sourceforge.net/project/showfiles.php?group_id=89339">Stable Versions</a></li>
@@ -304,9 +306,9 @@
 		</div></div></div>
 		
 		<div class="clear"></div>
-	</div></div>
-	<div class="spacious_block"><div style="width:100%;">
-		<div class="column_wrap25"><div class="columnn_inner_w"><div class="hblock2">
+	</div>
+	<div class="row">
+		<div class="col-md-3"><div class="columnn_inner_w"><div class="hblock2">
 			<h3>Community</h3>
 			<ul>
 				<li><a href="{ $smf_home }">Forum</a></li>
@@ -320,7 +322,7 @@
 			</ul>
 		</div></div></div>
 		
-		<div class="column_wrap25"><div class="columnn_inner_w"><div class="hblock2">
+		<div class="col-md-3"><div class="columnn_inner_w"><div class="hblock2">
 			<h3>Education</h3>
 			<ul>
 				<li><a href="http://wiki.freepascal.org/Lazarus_Documentation">Documentation</a></li>
@@ -334,7 +336,7 @@
 			</ul>
 		</div></div></div>
 		
-		<div class="column_wrap25"><div class="columnn_inner_w"><div class="hblock2">
+		<div class="col-md-3"><div class="columnn_inner_w"><div class="hblock2">
 			<h3>Service</h3>
 			<ul>
 				<li><a href="{ $home_php_name }?page=contact">Contact Us</a></li>
@@ -348,7 +350,7 @@
 		</div></div></div>
 		
 		<div class="clear"></div>
-	</div></div>
+	</div>
   </div>
 	
 	{else}{* ---------------Not homepage-------------- *}

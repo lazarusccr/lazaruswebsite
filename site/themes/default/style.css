@@ -54,7 +54,7 @@ clear:both;
 
 .pagewrap {
 width: 90%;
-min-width: 800px;
+/*min-width: 800px;*/
 border-left:4px solid #BBB;
 border-right:4px solid #BBB;
 margin: 0 auto;
