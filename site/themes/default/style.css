@@ -61,6 +61,11 @@ margin: 0 auto;
 background-color:#FFF;
 }
 
+@media (max-width: 660px) {
+	.pagewrap {
+		width: 100%;
+	}
+}
 
 /* page content */
 .contentwrap {
@@ -364,7 +369,7 @@ max-height:200px;
 
 .footer {
 padding: 10px 40px 5px;
-height:45px;
+height:70px;
 background-color: #FFE4FE;
 border-top:1px SOLID #DABADC;
 margin-top:30px;
@@ -424,6 +429,15 @@ clear:both;
 display:block;
 min-height:70px;
 text-align:right;
+background:url(images/topbar_bg_tile.gif);
+background-size:100% 100%;
+background-repeat:repeat-x;
+background-color:#b868cc;
+overflow-y:hidden;
+}
+
+.top_bar_mobile {
+min-height:70px;
 background:url(images/topbar_bg_tile.gif);
 background-size:100% 100%;
 background-repeat:repeat-x;
@@ -543,6 +557,7 @@ background-color:#136BB8;
 padding:5px;
 color:#fff;
 text-align:left;
+z-index: 1;
 }
 
 .dl_menu ul {
