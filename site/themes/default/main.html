@@ -19,6 +19,8 @@
 	<script type="text/javascript" src="{ $theme_path }script_home.js"></script>
 {/if}
 	<script type="text/javascript" src="{ $theme_path }script.js"></script>
+	<script type="text/javascript" src="{ $theme_path }jquery.slim.min.js"></script>
+	<script type="text/javascript" src="{ $theme_path }bootstrap.min.js"></script>
 	
 { $extra_head_content }
 
@@ -27,7 +29,27 @@
 
 <div class="pagewrap">
 
-  <div class="top_bar">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-sm-none d-md-none">
+		<a class="navbar-brand" href="{ $home_php_name }">Lazarus</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="{ $home_php_name }">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="{ $home_php_name }?page=about">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="https://wiki.lazarus.freepascal.org/Screenshots">Screenshots</a></li>
+			<li class="nav-item"><a class="nav-link" href="https://wiki.lazarus.freepascal.org/Lazarus_Faq">FAQ</a></li>
+			<li class="nav-item"><a class="nav-link" href="{ $home_php_name }?page=features">Features</a></li>
+			<li class="nav-item"><a class="nav-link" href="{ $home_php_name }?page=downloads">Downloads</a></li>
+			<li class="nav-item"><a class="nav-link" href="{ $smf_home }">Forum</a></li>
+			<li class="nav-item"><a class="nav-link" href="http://wiki.freepascal.org/">Wiki</a></li>
+			</ul>
+		</div>
+	</nav>
+
+  <div class="top_bar d-none d-sm-block d-md-block">
 	<div class="top_logo_bg">
 		<div class="top_logo">
 			<a href="{ $home_php_name }"><img src="{ $theme_path }images/top_logo.png" alt="Lazarus" /></a>
