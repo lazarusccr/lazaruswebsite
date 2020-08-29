@@ -497,17 +497,17 @@ display:block;
 background:url(images/mid_design2.jpg);
 background-size:580px 100%;
 background-repeat:no-repeat;
-display:block;
+/*display:block;*/
 min-height:235px;
 border-top:10px SOLID #92278F;
 border-bottom:10px SOLID #92278F;
 margin-bottom:15px;
 }
 
-.slidewrap .left_shot {
+/*.slidewrap .left_shot {
 float:left;
 margin:20px 0 0 40px;
-}
+}*/
 
 .slider_r {
 position:relative;
