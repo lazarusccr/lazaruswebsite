@@ -441,7 +441,7 @@ text-align:right;
 background:url(images/topbar_bg_tile.gif);
 background-size:100% 100%;
 background-repeat:repeat-x;
-background-color:#b868cc;
+background-color:#b868cc !important;
 overflow-y:hidden;
 }
 
@@ -471,6 +471,16 @@ font-size:4.8em;
 color:#FFFFFF;
 line-height:1em;
 text-align:left;
+}
+
+.top_logo_bg_s {
+background:url(images/top_logo_bg_s.png);
+background-repeat:no-repeat;
+}
+
+.top_logo_s {
+float:left;
+color:#FFFFFF;
 }
 
 .top_links {
