@@ -520,10 +520,9 @@ border-bottom:10px SOLID #92278F;
 margin-bottom:15px;
 }
 
-/*.slidewrap .left_shot {
-float:left;
-margin:20px 0 0 40px;
-}*/
+.slidewrap .left_shot {
+margin-top:20px;
+}
 
 .slider_r {
 position:relative;
